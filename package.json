@@ -1,0 +1,27 @@
+{
+  "name": "tourists",
+  "version": "0.0.0",
+  "description": "A WebApp for tourists in Munich",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"No tests specified\"",
+    "develop": "http-server . -o -c-1 -p 4000",
+    "build:css": "postcss --use autoprefixer -b 'last 2 versions' css/style.css --replace"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/r-wittmann/tourists.git"
+  },
+  "bugs": {
+    "url": "https://github.com/r-wittmann/tourists/issues"
+  },
+  "homepage": "r-wittmann.github.io/tourists",
+  "author": "Rainer Wittmann <r-wittmann@gmx.net>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.4.1",
+    "http-server": "^0.9.0",
+    "postcss-cli": "^2.5.2",
+    "standard": "^8.0.0"
+  }
+}
