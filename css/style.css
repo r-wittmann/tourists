@@ -1,3 +1,38 @@
 html, body {
   margin: 0;
 }
+
+#map {
+  height: 100vh;
+}
+
+.leaflet-control-zoom {
+  visibility: hidden;
+}
+
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 5px;
+  background-color: none;
+}
+
+.input-group .btn:focus {
+  background-color: #ffffff;
+  border-color: #cccccc;
+  outline: none;
+}
+
+.input-group .btn:active {
+  color: #fafafa;
+  background-color: #68c631;
+  border-color: #cccccc;
+  outline: none;
+}
+
+.input-group .form-control:focus {
+  border-color: #68c631;
+}

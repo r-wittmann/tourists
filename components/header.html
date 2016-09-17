@@ -1,0 +1,16 @@
+<div class="input-group">
+  <span class="input-group-btn">
+    <button class="btn btn-default menu-button">
+      <span class="glyphicon glyphicon-menu-hamburger"></span>
+    </button>
+  </span>
+  <input type="text" class="form-control" placeholder="Nach Adresse suchen..." ng-model="model.addressBarValue" >
+  <span class="input-group-btn">
+    <button class="btn btn-default menu-button" ng-show="model.addressBarValue">
+      <span class="glyphicon glyphicon-search"></span>
+    </button>
+    <button class="btn btn-default menu-button" ng-show="!model.addressBarValue">
+      <span class="glyphicon glyphicon-map-marker"></span>
+    </button>
+  </span>
+</div>

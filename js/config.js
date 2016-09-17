@@ -1,4 +1,4 @@
-/* global parkService */
+/* global tourists */
 
 /**
  * all constants are declared in config-service
