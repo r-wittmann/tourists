@@ -28,7 +28,8 @@
 
   </head>
   <body ng-controller="Controller">
-    <div style="height: 100vh;">
+    <div id="header" ng-include="'components/header.html'"></div>
+    <div id="map">
         <leaflet lf-center="model.map.center" defaults="model.map.defaults" markers="model.map.markers" geojson="model.map.geojson" height="100%"></leaflet>
     </div>
 
