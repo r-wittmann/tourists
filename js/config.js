@@ -17,7 +17,8 @@ tourists.factory('config', function () {
           maxZoom: 18,
           minZoom: 10
         },
-        markers: []
+        markers: [],
+        paths: []
       }
     }
   }
