@@ -36,3 +36,16 @@ html, body {
 .input-group .form-control:focus {
   border-color: #68c631;
 }
+
+#menu {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  z-index: 2000;
+  background-color: #ffffff;
+  padding: 6px;
+  border: 1px solid #cccccc;
+  border-left-width: 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
