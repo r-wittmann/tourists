@@ -12,6 +12,11 @@ tourists.controller('Controller', ['$scope', '$http', 'config', 'LocationService
     LocationService.getGeolocation($scope.model)
   }
   initialize()
+
+  $scope.centerOnLocation = function () {
+    const coords = $scope.model.currentPosition.coords
+    LocationService.centerOnLocation($scope.model, coords.latitude, coords.longitude, $scope.model.map.center.zoom)
+  }
 }])
 
 tourists.service('LocationService', ['$timeout', function ($timeout) {
@@ -43,5 +48,15 @@ tourists.service('LocationService', ['$timeout', function ($timeout) {
         }
       }, 0)
     })
+  }
+
+  this.centerOnLocation = function (model, latitude, longitude, zoom) {
+    $timeout(() => {
+      model.map.center = {
+        lat: latitude,
+        lng: longitude,
+        zoom: zoom
+      }
+    }, 0)
   }
 }])
