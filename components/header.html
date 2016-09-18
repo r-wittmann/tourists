@@ -6,10 +6,10 @@
   </span>
   <input type="text" class="form-control" placeholder="Nach Adresse suchen..." ng-model="model.addressBarValue" >
   <span class="input-group-btn">
-    <button class="btn btn-default menu-button" ng-show="model.addressBarValue">
+    <button class="btn btn-default menu-button" ng-if="model.addressBarValue || !model.currentPosition">
       <span class="glyphicon glyphicon-search"></span>
     </button>
-    <button class="btn btn-default menu-button" ng-show="!model.addressBarValue">
+    <button class="btn btn-default menu-button" ng-if="!model.addressBarValue && model.currentPosition">
       <span class="glyphicon glyphicon-map-marker"></span>
     </button>
   </span>
