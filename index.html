@@ -29,9 +29,7 @@
   </head>
   <body ng-controller="Controller">
     <div id="header" ng-include="'components/header.html'"></div>
-    <div id="map">
-        <leaflet lf-center="model.map.center" defaults="model.map.defaults" markers="model.map.markers" geojson="model.map.geojson" height="100%"></leaflet>
-    </div>
+    <div id="map" ng-include="'components/map.html'"></div>
     <div id="menu" ng-include="'components/menu.html'" ng-show="model.menuIsOpen"></div>
 
     <script type="text/javascript" src="js/app.js"></script>
